@@ -1,0 +1,15 @@
+<script>
+    import { metatags } from '@sveltech/routify'
+    metatags.title = 'My Routify app'
+    metatags.description = 'Description coming soon...'
+</script>
+
+<div id='container'>
+    <h1>Welcome to the page</h1>
+</div>
+
+<style>
+    #container {
+        margin-top: 35px;
+    }
+</style>
