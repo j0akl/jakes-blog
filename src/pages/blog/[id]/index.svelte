@@ -1,5 +1,6 @@
 <script>
+    export let id;
     
 </script>
 
-<div>hello</div>
+<div>{id}</div>
