@@ -1,7 +1,9 @@
 <script>
     import { metatags } from '@sveltech/routify'
+    import { onMount } from 'svelte';
     metatags.title = 'My Routify app'
     metatags.description = 'Description coming soon...'
+
 </script>
 
 <div id='container'>

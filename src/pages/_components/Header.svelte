@@ -1,10 +1,19 @@
 <script>
-
-
     import {user} from "/Users/jakelynn/Documents/Projects/blog/src/stores"
     export let handleLogout;
+    import { query } from 'svelte-apollo'
+    import { ME_QUERY } from '../_graphql/queries/ME'
+    import { onMount } from "svelte";
 
-    $: me = $user 
+    const userPromise = query(ME_QUERY)
+    // gets the current user if there is an established session
+    onMount(async () => {
+        const currentUser = await userPromise.result()
+        if (currentUser.data.me) {
+            user.set(currentUser.data.me)
+        }
+    })
+
 </script>
 
 <header>
@@ -12,11 +21,11 @@
     <a href="/blog">blog</a>
     <a href="/about">about</a>
     <div id="username-or-login">
-        {#if me === 0}
+        {#if $user === 0}
             <a href="/login">login</a>
             <a href="/register">sign up</a>
         {:else}
-            <a href={"/user/" + me.id}>{me.username}</a>
+            <a href={"/user/" + $user.id}>{$user.username}</a>
             <button on:click={handleLogout}>logout</button>
         {/if}
     </div>
