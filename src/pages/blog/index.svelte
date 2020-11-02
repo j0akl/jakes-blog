@@ -12,9 +12,11 @@
 
 <div id='container'>
     <h1>Recent Posts</h1>
-    {#if user !== 0}
-        <button on:click={() => $goto("/create-post")}>New Post</button>
-    {/if}
+    {#await $user then user}
+        {#if user !== 0}
+            <button on:click={() => $goto("/create-post")}>New Post</button>
+        {/if}
+    {/await}
     {#if $posts.loading}
         <p>loading posts...</p>
     {:else if $posts.data.posts}
