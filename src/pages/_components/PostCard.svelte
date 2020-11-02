@@ -1,19 +1,14 @@
 <script>
-    export let text = `
-    <p>This is an article concerning something about philosophy or epistemology or something</p>
-    ` // this will be html
-    export let title = "Test Article Title"
-    export let author = "Jake Lynn"
-    export let createdAt = "Today's Date"
-    export let id = 1;
+    export let post;
 </script>
 
 <div id="card-container">
-    <a href={"/blog/" + id}>
-        <h2>{title}</h2>
-    </a>
-    <em>by <strong>{author}</strong> on {createdAt}</em>
-    <div>{@html text}</div>
+        <a href={"/blog/" + post.id}>
+            <h2>{post.title}</h2>
+        </a>
+        <p>
+            <em>by <strong>{post.user.username}</strong> on {post.createdAt}</em>
+        </p>
 </div>
 
 <style>

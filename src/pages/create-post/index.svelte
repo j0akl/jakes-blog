@@ -41,7 +41,8 @@
         {#if titleError}
             <p>{titleError}</p>
         {/if}
-        <textarea name="text" bind:value={text} placeholder="text"/>
+        <textarea name="text" bind:value={text} placeholder="enter some html or plain text...
+img tags must be given width 100% to display correctly"/>
         {#if textError}
             <p>{textError}</p>
         {/if}

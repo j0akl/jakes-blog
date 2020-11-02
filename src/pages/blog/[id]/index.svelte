@@ -15,25 +15,32 @@
     <p>loading...</p>
 {:else if $post}
     <div class="post-wrapper">
-        <h1>{$post.data.post.title}</h1>
-        <p>{$post.data.post.text}</p>
+        <div class="title-wrapper">
+            <h1>{$post.data.post.title}</h1>
+            <p class="metainfo">
+                <em>by <strong>{$post.data.post.user.username}</strong> on {$post.data.post.createdAt}</em>
+            </p>
+        </div>
+        <div class="body-wrapper">{@html $post.data.post.text}</div>
     </div>
 {/if}
 
 <style>
     .post-wrapper {
-        margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
         width: 40vw;
         text-align: left;
     }
-    h1 {
+    .body-wrapper {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 15px;
+        overflow: hidden;
+    }
+    .title-wrapper {
         padding: 10px;
         border-bottom: 1px solid gray;
-    }
-    p {
-        padding-left: 10px;
-        padding-right: 10px;
     }
 </style>
