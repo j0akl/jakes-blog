@@ -1,7 +1,7 @@
 <script>
 
     import {mutation} from "svelte-apollo"
-    import {user} from '/Users/jakelynn/Documents/Projects/blog/src/stores.js'
+    import {user} from '../stores'
     import {REGISTER} from "../_graphql/mutations/REGISTER"
    import { goto } from "@sveltech/routify";
 

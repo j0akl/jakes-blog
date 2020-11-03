@@ -1,5 +1,5 @@
 <script>
-    import {user} from "/Users/jakelynn/Documents/Projects/blog/src/stores"
+    import {user} from "../stores"
     export let handleLogout;
     import { query } from 'svelte-apollo'
     import { ME_QUERY } from '../_graphql/queries/ME'

@@ -4,7 +4,7 @@
 
     import {mutation } from 'svelte-apollo'
     import {LOGIN} from '../_graphql/mutations/LOGIN';
-    import {user} from '/Users/jakelynn/Documents/Projects/blog/src/stores.js'
+    import {user} from '../stores'
 
     let usernameOrEmail = "";
     let password = "";

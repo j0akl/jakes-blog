@@ -3,7 +3,7 @@
     import {goto} from "@sveltech/routify"
     import { POSTS } from '../_graphql/queries/POSTS'
     import { query } from "svelte-apollo"
-    import { user } from '/Users/jakelynn/Documents/Projects/blog/src/stores.js'
+    import { user } from '../stores.js'
     import { dataset_dev } from "svelte/internal";
 
     const posts = query(POSTS)

@@ -9,7 +9,7 @@
     import Header from './_components/Header.svelte'
     import {  mutation  } from "svelte-apollo";
     import {LOGOUT} from "./_graphql/mutations/LOGOUT" 
-    import {user} from '../stores'
+    import {user} from './stores'
 
     const logout = mutation(LOGOUT)
     const handleLogout = async () => {

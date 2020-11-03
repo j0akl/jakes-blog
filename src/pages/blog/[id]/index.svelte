@@ -1,9 +1,8 @@
 <script>
     export let id;
-    import { POST } from '/Users/jakelynn/Documents/Projects/blog/src/pages/_graphql/queries/POST.js'
+    import { POST } from "../_graphql/POST"
     import { query } from 'svelte-apollo'
     import { onMount } from 'svelte';
-
 
 
     let post = query(POST, {variables: { id: parseInt(id) }})
