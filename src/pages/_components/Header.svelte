@@ -36,8 +36,8 @@
 <style>
     header {
         box-shadow: 2px 2px 5px grey;
-        height: 12vh;
-        min-height: 12vh;
+        height: 8vh;
+        min-height: 8vh;
         display: flex;
         vertical-align: center;
         width: 100%;
