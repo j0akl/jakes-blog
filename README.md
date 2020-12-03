@@ -7,4 +7,4 @@ as a personal challenge.
 
 This repository contains the frontend routify application only. The backend is located at https://github.com/j0akl/blog-backend
 
-// TODO add install instructions
+(almost) Available at jake-lynn.com
