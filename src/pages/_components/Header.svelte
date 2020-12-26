@@ -19,6 +19,7 @@
 <header>
     <a href="/" id="title">Jake Lynn</a>
     <a href="/blog">blog</a>
+    <a href="/projects">projects</a>
     <a href="/about">about</a>
     <div id="username-or-login">
         {#if $user === 0}
@@ -29,8 +30,6 @@
             <button on:click={handleLogout}>logout</button>
         {/if}
     </div>
-        
-        
 </header>
 
 <style>
