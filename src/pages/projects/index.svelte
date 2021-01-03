@@ -1,6 +1,7 @@
 
 <div id="container">
 	<h1>Projects</h1>
+	<p>As you can probably tell from this website, frontend design isn't exactly my strong suit. Most of these projects are github links or writing samples, so please give the code and papers a read!</p>
 	<a href="https://pdfhost.io/v/RYnUUUqKp_Proposalpdf.pdf"><h2>NASA Big Idea Proposal</h2></a>
 	<p>I wrote this paper with a group of other students from Northeastern proposing a pair of robots that would work together to explore craters on the moon that, due to the angle of the sun, permanetly exist in darkness. At the time of the paper's completion, I was the lead of the Doghouse team, and did much of the research, writing, and conceptualization in that section of the project. I also created filmed and edited the proposal video, which can be found on the Big Idea website. I have always loved the concept of space exploration, this project was a great way for me to get involved in an area I have been passionate about throughout my life. At the time of writing the paper, I was a physics major and was unable to contribute to the software component of the project. If I could go back and start over, I would have participated in the software development, which included localization, mapping, and wireless communication.</p>
 	<a href="https://github.com/j0akl/10ser"><h2>Machine Learning from Scratch</h2></a>
